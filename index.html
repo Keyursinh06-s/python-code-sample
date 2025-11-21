@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><title>Python Code Example</title></head>
+<body>
+<h1>Python Code Sample</h1>
+<pre><code>
+# Python Example - Data Processing
+import pandas as pd
+import numpy as np
+
+def process_data(filename):
+    """Load and process CSV data"""
+    df = pd.read_csv(filename)
+    df['processed'] = df['value'].apply(lambda x: x * 2)
+    return df
+
+# Machine Learning Example
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+
+def train_model(X, y):
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+    model = RandomForestClassifier(n_estimators=100)
+    model.fit(X_train, y_train)
+    return model
+</code></pre>
+</body>
+</html>
